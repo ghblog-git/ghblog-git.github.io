@@ -9,7 +9,7 @@
      }
      else {
          $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = '(ฅ>ω<*ฅ) 喵喵爱你哟~' + OriginTitle;
+         document.title = '(ฅ>ω<*ฅ) 喵喵φ(゜▽゜*)♪爱你哟~' + OriginTitle;
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
