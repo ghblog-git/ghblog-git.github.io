@@ -31,10 +31,9 @@ body {
   background: https;
   background-attachment: local;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  -webkit-background-size: 400px;
+  -moz-background-size: 400px;
+  background-size: 400px;
 }
 h1,
 h2,
