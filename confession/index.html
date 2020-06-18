@@ -1,0 +1,485 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GHBlog | GHBlog</title><meta name="description" content="我喜欢你❤️！                                                                                                                 /ghblog-git.github.io/                                       项目已经开"><meta name="keywords" content="python， 嵌入式"><meta name="author" content="gh"><meta name="copyright" content="gh"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/ghblog-git.github.io/img/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="GHBlog"><meta name="twitter:description" content="我喜欢你❤️！                                                                                                                 /ghblog-git.github.io/                                       项目已经开"><meta name="twitter:image" content="https://github.com/ghblog-git/ghblog-git.github.io.git/img/post.jpg"><meta property="og:type" content="website"><meta property="og:title" content="GHBlog"><meta property="og:url" content="https://github.com/ghblog-git/ghblog-git.github.io.git/confession/"><meta property="og:site_name" content="GHBlog"><meta property="og:description" content="我喜欢你❤️！                                                                                                                 /ghblog-git.github.io/                                       项目已经开"><meta property="og:image" content="https://github.com/ghblog-git/ghblog-git.github.io.git/img/post.jpg"><meta property="article:published_time" content="2020-06-18T14:04:13.740Z"><meta property="article:modified_time" content="2020-06-18T14:04:13.740Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '1'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/ghblog-git.github.io/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="https://github.com/ghblog-git/ghblog-git.github.io.git/confession/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/ghblog-git.github.io/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"不达鸟,滚去学习","fontSize":"15px"},
+  medium_zoom: true,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: true,
+  isPhotoFigcaption: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isSidebar: false  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/custom.min.css"><script type="text/javascript" src="/js/crash_cheat.js"></script><!-- script(type='text/javascript', src='https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js')--></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/ghblog-git.github.io/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/ghblog-git.github.io/tags/"><div class="headline">标签</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/ghblog-git.github.io/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list" aria-hidden="true"></i><span> 媒体</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/gallery/"><i class="fa-fw far fa-image"></i><span> 相册</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fab fa-xbox" aria-hidden="true"></i><span> 聚宝盆</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/home/"><i class="fa-fw fab fa-phoenix-framework"></i><span> 导航</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/confession/"><i class="fa-fw fa fa-heart"></i><span> 告白</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/contact/"><i class="fa-fw far fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div class="not-index-bg" id="nav" style="background-image: url(https://img.xjh.me/random_img.php?type=bg&amp;ctype=nature&amp;return=302)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/ghblog-git.github.io/">GHBlog</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-folder-open" aria-hidden="true"></i><span> 文章</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list" aria-hidden="true"></i><span> 媒体</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/gallery/"><i class="fa-fw far fa-image"></i><span> 相册</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fab fa-xbox" aria-hidden="true"></i><span> 聚宝盆</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/ghblog-git.github.io/home/"><i class="fa-fw fab fa-phoenix-framework"></i><span> 导航</span></a></li><li><a class="site-page" href="/ghblog-git.github.io/confession/"><i class="fa-fw fa fa-heart"></i><span> 告白</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/contact/"><i class="fa-fw far fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/ghblog-git.github.io/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="page_site-info"><h1 id="site_title">GHBlog</h1></div></div><main class="layout_page" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>我喜欢你❤️！</title>
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="css/theme.css" />
+    <script src="js/jquery-2.0.3.min.js"></script>
+  <meta name="generator" content="Hexo 4.2.1"></head>
+  <body>
+    <div id="div_container">
+      <!-- 最外层div，用于居中兼容PC和移动 -->
+      <div id="div_start_bg"></div>
+      <div id="div_onlyyou">
+        <!-- 用于设置背景 -->
+        <div id="div_oy_inner">
+          <!-- 用于存放content -->
+          <div class="div_oy_text">
+            <h1></h1>
+            /ghblog-git.github.io/<img class="img_oy_text lazyload" src="" / data-src="">
+            <p class="p_oy_text"></p>
+            <div></div>
+            <a href="https://gitee.com/lovelijunyi/confession" target="_blank" rel="noopener" style="color: rgb(238, 9, 9);">项目已经开源，感谢会飞的小戈！！！</a>
+
+
+            <ul id="ul_oy_benefit">
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+              <li class="li_oy_benefit"></li>
+            </ul>
+          </div>
+          <ul id="ul_oy_btn">
+            
+            <li onclick="oy_go_next()">Yes&nbsp;&nbsp;❤</li>
+            <li onclick="oy_show_benefit()">No&nbsp;&nbsp;✖</li>
+          </ul>
+          <div id="div_oy_note" onclick="oy_hide_note()">
+            <img src="/ghblog-git.github.io/" class="lazyload" data-src="images/emoji_kelian.jpg"  alt="" /><br />请告诉我Yes！
+            <div id="div_oy_note_close">✖</div>
+          </div>
+          <div id="div_oy_yes">
+            <img src="/ghblog-git.github.io/" class="lazyload" data-src="images/emoji_bixin.jpg"  alt="" /><br />太好了！哈哈~
+          </div>
+        </div>
+      </div>
+      <div class="div_pure_words">
+        <div class="div_pure_words_bg">
+          <div class="div_pure_words_height"></div>
+        </div>
+        <div class="div_pw_typed">
+          <span id="span_pw_typed"></span>
+        </div>
+      </div>
+      <div id="div_btn_container">
+        <div id="div_btn_inner">
+
+          <div class="div_music_tips"></div>
+          <div class="div_btn" id="div_music" onclick="music_switch()">
+            <!-- 音乐按钮部分 -->
+            <img
+              id="img_music"
+              src="images/music_note_big.png"
+              style="-webkit-animation: music_play_rotate 1s linear infinite;"
+            />
+            <!-- 您的浏览器不支持播放音乐 -->
+            <audio id="audio_music" autoplay="autoplay" loop="loop">
+              <source type="audio/mpeg" />
+            </audio>
+          </div>
+          <div class="div_record_tips"></div>
+          <div class="div_btn" id="div_record" onclick="record_switch()">
+            <audio id="audio_record" loop="loop">
+              <source type="audio/mpeg" />
+            </audio>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+
+
+    <script>
+      //判断客户端设备，选择写入meta
+      function init_viewport() {
+        if (navigator.userAgent.indexOf("Android") != -1) {
+          var version = parseFloat(RegExp.$1);
+          if (version > 2.3) {
+            var width =
+              window.outerWidth == 0 ? window.screen.width : window.outerWidth;
+            var phoneScale = parseInt(width) / 500;
+            document.write(
+              '<meta name="viewport" content="width=500, minimum-scale = ' +
+                phoneScale +
+                ", maximum-scale = " +
+                phoneScale +
+                ', target-densitydpi=device-dpi">'
+            );
+          } else {
+            document.write(
+              '<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">'
+            );
+          }
+        } else if (navigator.userAgent.indexOf("iPhone") != -1) {
+          var phoneScale = parseInt(window.screen.width) / 500;
+          document.write(
+            '<meta name="viewport" content="width=500, min-height=750, initial-scale=' +
+              phoneScale +
+              ", maximum-scale=" +
+              phoneScale +
+              ', user-scalable=0" /> '
+          ); //0.75   0.82
+        } else {
+          document.write(
+            '<meta name="viewport" content="width=500, height=750, initial-scale=0.64" /> '
+          ); //0.75  0.82
+        }
+      }
+      init_viewport();
+
+      var theme = "pure_words";
+      console.log("theme ->" + theme);
+      var theme_content = {
+        pure_words_content:
+          "遇见你是我所有美好故事的开始，所以，请别放开我的手，也别缺席我的将来，因为一辈子和你在一起才叫将来<um style='color: #F44336;'>💕</um>",
+        typed_bool: "typed_y",
+        cursor_char: "cursor_heart",
+        bg_style_pure_words: "bg_opacity",
+        bg_img: "images/3.jpg",
+        simple_page_content: "",
+        video_page_content: "",
+      };
+      console.log(theme_content);
+
+      var music_json = {
+        music_select: "m_online",
+        m_online_id: "7",
+        m_online_url: "images/1.mp3",
+        m_upload_name: "null",
+        m_upload_url: "null",
+      };
+      console.log(music_json);
+      var record_json = {
+        record_bool: "r_false",
+        r_wechat_time: "null",
+        r_wechat_url: "null",
+        r_wechat_amr: "null",
+      };
+      console.log(record_json);
+
+      var main_title = "我喜欢你❤️";
+
+      // console.log(main_title);
+      if (main_title == "" || main_title == "null") {
+        //允许标题为空
+        document.title = "慢慢喜欢你";
+      }
+
+      var window_height = $(window).height();
+      console.log("window_height ->" + window_height);
+      var pure_words_content = theme_content["pure_words_content"];
+      var str_cursorChar;
+      var typed_bool;
+      var interval_pw_height;
+      var height_div_pw = $(".div_pure_words_height").height();
+      function init_pure_words() {
+        $(".div_pure_words_height").html(pure_words_content + "22222"); //初始化复制内容，撑开文档高度
+        // 初始化设置div的bg图片 初始化设置div的bg图片
+        if (
+          typeof theme_content["bg_style_pure_words"] != "undefined" &&
+          theme_content["bg_style_pure_words"] == "bg_opacity"
+        ) {
+          if (
+            typeof theme_content["bg_img"] != "undefined" &&
+            theme_content["bg_img"] != ""
+          ) {
+            $(".div_pure_words_bg").css({
+              "background-image": "url(" + theme_content["bg_img"] + ")",
+            });
+          }
+        }
+        //以下是打字效果的js
+        if (
+          typeof theme_content["cursor_char"] != "undefined" &&
+          theme_content["cursor_char"] != ""
+        ) {
+          switch (
+            theme_content["cursor_char"] //设置打字光标的样式
+          ) {
+            case "cursor_heart":
+              str_cursorChar = '<um style="color: #F44336;">❤</um>';
+              break;
+            case "cursor_sub":
+              str_cursorChar = "_";
+              break;
+            case "cursor_music":
+              str_cursorChar = "♫";
+              break;
+            case "cursor_star":
+              str_cursorChar = "★";
+              break;
+            case "cursor_sun":
+              str_cursorChar = "☀";
+              break;
+            default:
+              str_cursorChar = "|";
+          }
+        } else {
+          //处理全新作品，默认显示打字效果
+          str_cursorChar = "❤";
+        }
+        //判断用户有没有选择打字效果
+        if (
+          typeof theme_content["typed_bool"] != "undefined" &&
+          theme_content["typed_bool"] != ""
+        ) {
+          typed_bool = theme_content["typed_bool"] == "typed_y" ? true : false;
+        } else {
+          typed_bool = false; //默认显示打字效果
+        }
+        display_pure_words();
+        $(".div_pure_words").fadeIn();
+        interval_pw_height = setInterval(function () {
+          console.log(
+            "div_pure_words_height -> " + $(".div_pure_words_height").height()
+          );
+          var least_height_div_pw = $(".div_pure_words_height").height();
+          if (least_height_div_pw > height_div_pw) {
+            height_div_pw = least_height_div_pw;
+          } else {
+            clearInterval(interval_pw_height);
+            $(".div_pure_words_height").height(least_height_div_pw + 100);
+            if ($(".div_pure_words_height").height() < window_height) {
+              $(".div_pure_words_height").height(window_height); //不能小于窗口的高度
+              console.log("let us be high as window");
+            }
+          }
+        }, 100);
+      }
+
+      function display_pure_words() {
+        if (typed_bool) {
+          var typed_pure_words = new Typed("#span_pw_typed", {
+            strings: [pure_words_content],
+            //输入内容, 支持html标签
+            typeSpeed: 120,
+            //打字速度
+            cursorChar: str_cursorChar,
+            //替换光标的样式
+            contentType: "html",
+            //值为html时，将打印的文本标签直接解析html标签
+            onComplete: function (abc) {
+              // console.log(abc);
+              console.log("finished typing words");
+              // console.log($('#span_pw_typed').height()-$(".div_pure_words_height").height());
+            },
+          });
+        } else {
+          //如果不需要打字效果就直接显示
+          $("#span_pw_typed").html(pure_words_content).fadeIn();
+        }
+        init_attachment();
+      }
+      var start_content = {
+        chase_title:
+          "做我女朋友好不好<um style='color: #F44336;'>！</um>",
+        chase_text:
+          "承蒙你的出现，够我喜欢好多年，我希望，以后你能用我的名字拒绝所有人<um style='color: #F44336;'>💕</um>",
+        chase_benefit: [
+          "你是我拔掉氧气罐都想吻的人",
+          "你是我跑完8000米还想拥抱的人",
+          "你是我自罚三杯都不肯开口的秘密",
+          "你是我赴汤蹈火都不肯放下的执着",
+          "你是我电量只剩1%也想回信息的人",
+          "你是我穷极一生不想醒来的梦",
+        ],
+        bg_style: "bg_custom",
+        bg_img: "images/2.jpg",
+        img_bool: "img_true",
+        img_src: "images/1.gif",
+      }; //可能为null
+      console.log(start_content);
+      var start_id;
+      $(function () {
+        //此事件为触发互动创意
+        start_id = "onlyyou"; //可能为null
+        init_start(start_id);
+      });
+      function init_start(start_id) {
+        console.log("init_start ->" + start_id);
+        switch (start_id) {
+          case "loveformat":
+            $(".div_loveformat").show();
+            init_loveformat();
+            break;
+          case "hearttree":
+            $("#div_hearttree").show();
+            init_hearttree();
+            break;
+          case "courage":
+            $("#div_courage").show();
+            init_courage();
+            break;
+          case "birthdaycake":
+            $("#div_dbcake").show();
+            init_birthdaycake();
+            break;
+          case "intersect":
+            $("#div_intersect").show();
+            init_intersect();
+            break;
+          case "onlyyou":
+            $("#div_onlyyou").show();
+            init_onlyyou();
+            break;
+          default:
+            init_theme();
+        }
+      }
+      //开始动画主体部分
+      function init_theme() {
+        console.log("init_theme");
+        $("#div_start_bg").fadeOut();
+        init_pure_words();
+      }
+      var attachment = "null"; //可能为null
+      var attached_content = {
+        bool_save: false,
+      }; //可能为null
+      console.log(attached_content);
+
+      function init_attachment() {
+        //开始attachment
+        console.log("init_attachment ->" + attachment);
+        switch (attachment) {
+          case "timer":
+            init_at_timer();
+            break;
+          default:
+            return;
+        }
+      }
+    </script>
+    <!-- JQuery -->
+    <script src="js/typed.min.js"></script>
+    <script src="js/start_onlyyou.js"></script>
+    <script src="js/jweixin-1.2.0.js"></script>
+    <script src="js/theme_common.js"></script>
+  <script src="/ghblog-git.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/ghblog-git.github.io/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>    
+
+</html>
+</div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="/ghblog-git.github.io/js/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: 'USsAX6K2H2XCzyiVSLpds9hM-MdYXbMMI',
+  appKey: 'GJVgV6OoBI73w3NeO4n6iUEC',
+  notify: true,
+  verify: false,
+  placeholder: 'Please leave your footprints 欢迎小伙伴们留言 (填上邮箱便可以在评论区显示自己的qq头像哦(●ˇ∀ˇ●)',
+  avatar: 'monsterid',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'en',
+  recordIP: false,
+  serverURLs: '',
+  emojiCDN: '',
+  emojiMaps: ""
+});</script></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/avatar.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">gh</div><div class="author-info__description">记录自己学习点滴</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/ghblog-git.github.io/archives"><div class="headline">文章</div><div class="length_num">11</div></a></div><div class="card-info-data-item is-center">      <a href="/ghblog-git.github.io/tags"><div class="headline">标签</div><div class="length_num">9</div></a></div><div class="card-info-data-item is-center">     <a href="/ghblog-git.github.io/categories"><div class="headline">分类</div><div class="length_num">7</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="加入书签" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>加入书签</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:1732127846@qq.com" target="_blank" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>公告</span></div><div class="announcement_content">感谢小伙伴访问本站 ^_^</div></div></div><div class="card-widget card-pixiv"><div class="card-content"><div class="item-headline"><i class="fa fa-image" aria-hidden="true"></i><span>Pixiv日榜Top50</span><iframe src="https://cloud.mokeyjay.com/pixiv" frameborder="0" style="width:99%;height:380px;margin:0;"></iframe></div></div></div><div class="card-widget card-map"><div class="card-content"><div class="item-headline"><i class="fa fa-globe-asia" aria-hidden="true"></i><span>访客地图</span></div><script id="clstr_globe" type="text/javascript" defer="defer" src="//cdn.clustrmaps.com/globe.js?d=fVVNctuKmo09vCC7sOiOyud5TUfdzYRvKg9u5jbqOD8"></script></div></div><div class="card-widget card-calendar"><div class="card-content"><div class="item-headline"><i class="far fa-calendar-alt" aria-hidden="true"></i><span>日历</span></div><div class="widget-wrap"></div><div class="widget" id="calendar"></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/ghblog-git.github.io/posts/62963/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/13.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/404.jpg'" title="计算机视觉" alt="计算机视觉"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ghblog-git.github.io/posts/62963/" title="计算机视觉">计算机视觉</div><time class="aside-post_meta post-meta__date" title="发表于 2020-06-17 17:08:18">2020-06-17</time></div></a></div><div class="aside-recent-post"><a href="/ghblog-git.github.io/posts/35246/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/14.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/404.jpg'" title="深度学习入门（一）" alt="深度学习入门（一）"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ghblog-git.github.io/posts/35246/" title="深度学习入门（一）">深度学习入门（一）</div><time class="aside-post_meta post-meta__date" title="发表于 2020-06-12 07:59:12">2020-06-12</time></div></a></div><div class="aside-recent-post"><a href="/ghblog-git.github.io/posts/12185/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/11.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/404.jpg'" title="多线程面向对象爬取表情包" alt="多线程面向对象爬取表情包"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ghblog-git.github.io/posts/12185/" title="多线程面向对象爬取表情包">多线程面向对象爬取表情包</div><time class="aside-post_meta post-meta__date" title="发表于 2020-05-29 20:35:14">2020-05-29</time></div></a></div><div class="aside-recent-post"><a href="/ghblog-git.github.io/posts/53690/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/10.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/404.jpg'" title="TCP/IP各层详解" alt="TCP/IP各层详解"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ghblog-git.github.io/posts/53690/" title="TCP/IP各层详解">TCP/IP各层详解</div><time class="aside-post_meta post-meta__date" title="发表于 2020-05-26 06:47:17">2020-05-26</time></div></a></div><div class="aside-recent-post"><a href="/ghblog-git.github.io/posts/47142/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="https://cdn.jsdelivr.net/gh/ghblog-git/img/images/9.jpg" onerror="this.onerror=null;this.src='/ghblog-git.github.io/img/404.jpg'" title="python网络编程(一)" alt="python网络编程(一)"/></div><div class="aside-post-title"><div class="aside-post_title" href="/ghblog-git.github.io/posts/47142/" title="python网络编程(一)">python网络编程(一)</div><time class="aside-post_meta post-meta__date" title="发表于 2020-05-26 06:16:40">2020-05-26</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fa fa-folder-open" aria-hidden="true"></i><span>分类</span></div><ul class="aside-category-list">
+            <li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/linux/"><span class="aside-category-list-name">linux</span><span class="aside-category-list-count">1</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/python/"><span class="aside-category-list-name">python</span><span class="aside-category-list-count">4</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/python-keras/"><span class="aside-category-list-name">python, keras</span><span class="aside-category-list-count">1</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"><span class="aside-category-list-name">嵌入式</span><span class="aside-category-list-count">1</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="aside-category-list-name">数据结构</span><span class="aside-category-list-count">1</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/%E7%BC%96%E7%A8%8B/"><span class="aside-category-list-name">编程</span><span class="aside-category-list-count">2</span></a></li><li class="aside-category-list-item"><a class="aside-category-list-link" href="/ghblog-git.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"><span class="aside-category-list-name">计算机网络</span><span class="aside-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/ghblog-git.github.io/tags/c%E8%AF%AD%E8%A8%80/" style="font-size: 16px; color: #999">c语言</a> <a href="/ghblog-git.github.io/tags/python/" style="font-size: 16px; color: #999">python</a> <a href="/ghblog-git.github.io/tags/%E6%80%BB%E7%BB%93/" style="font-size: 20px; color: #99a1ac">总结</a> <a href="/ghblog-git.github.io/tags/%E6%8A%98%E8%85%BE/" style="font-size: 16px; color: #999">折腾</a> <a href="/ghblog-git.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 16px; color: #999">深度学习</a> <a href="/ghblog-git.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" style="font-size: 16px; color: #999">深度学习, 计算机视觉</a> <a href="/ghblog-git.github.io/tags/%E7%88%AC%E8%99%AB/" style="font-size: 20px; color: #99a1ac">爬虫</a> <a href="/ghblog-git.github.io/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #99a9bf">笔记</a> <a href="/ghblog-git.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" style="font-size: 16px; color: #999">网络编程</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>归档</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/ghblog-git.github.io/archives/2020/06/"><span class="archive-list-date">六月 2020</span><span class="archive-list-count">2</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/ghblog-git.github.io/archives/2020/05/"><span class="archive-list-date">五月 2020</span><span class="archive-list-count">9</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line" aria-hidden="true"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">11</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="5/15/2020 17:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020  <i id="heartbeat" class="fa fas fa-heartbeat"></i> gh</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div></div><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><meta name="generator" content="Hexo 4.2.1"></head></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode far fa-moon" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/ghblog-git.github.io/js/utils.js"></script><script src="/ghblog-git.github.io/js/main.js"></script><script src="/ghblog-git.github.io/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/ghblog-git.github.io/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/ghblog-git.github.io/js/third-party/click_heart.js"></script><script src="/ghblog-git.github.io/js/third-party/ClickShowText.js"></script><script src="/ghblog-git.github.io/js/search/local-search.js"></script><script src="/js/calendar.js"></script><script src="/js/languages.js"></script><script src="https://cdn.jsdelivr.net/gh/ghblog-git/live2d-widget@latest/autoload.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><script src="/ghblog-git.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/ghblog-git.github.io/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
