@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>高数模块一</title>
+      <link href="/posts/27009/"/>
+      <url>/posts/27009/</url>
+      
+        <content type="html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script><h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><ol><li><p>等价无穷小  </p><script type="math/tex; mode=display">1-\cos^a x \sim \frac{a}{2}x^2</script><script type="math/tex; mode=display">a^x - 1 \sim x\ln a</script></li><li><p>麦克劳林  </p></li><li>洛必达法则  </li></ol><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol><li>保号性  </li><li>极限存在性</li><li>列，子列</li></ol><h2 id="连续与间断"><a href="#连续与间断" class="headerlink" title="连续与间断"></a>连续与间断</h2><h3 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h3><h3 id="间断"><a href="#间断" class="headerlink" title="间断"></a>间断</h3><ol><li>第一类间断点  <ul><li>可去间断点</li><li>跳跃间断点</li></ul></li><li>第二类间断点</li></ol><h2 id="题型"><a href="#题型" class="headerlink" title="题型"></a>题型</h2><h3 id="不定型"><a href="#不定型" class="headerlink" title="不定型"></a>不定型</h3><h3 id="n项和，积极限"><a href="#n项和，积极限" class="headerlink" title="n项和，积极限"></a>n项和，积极限</h3><h3 id="夹逼定理"><a href="#夹逼定理" class="headerlink" title="夹逼定理"></a>夹逼定理</h3><h3 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 极限与连续 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 高数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深度学习入门（四）</title>
       <link href="/posts/51320/"/>
       <url>/posts/51320/</url>
