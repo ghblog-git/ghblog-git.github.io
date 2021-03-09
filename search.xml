@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>js事件</title>
+      <link href="/posts/14994/"/>
+      <url>/posts/14994/</url>
+      
+        <content type="html"><![CDATA[<ul><li>事件源</li><li>事件名</li><li>事件监听</li><li>事件处理</li></ul><h2 id="事件类型"><a href="#事件类型" class="headerlink" title="事件类型"></a>事件类型</h2><p>javascript可以处理的事件类型为: 鼠标事件、键盘事件、HTML事件。  </p><p>几个常用的事件:<br>    <font color="red"> onclick, onblur, onfocus, onload,onchange, onmouseover, onmouseout, onkeyup, onkeydown</font></p><h2 id="事件流和事件模型"><a href="#事件流和事件模型" class="headerlink" title="事件流和事件模型"></a>事件流和事件模型</h2><p>事件流: 接收事件的顺序。<br>事件顺序: 事件捕获(从大到小)和事件冒泡(从小到大)。<br>冒泡和捕获其实都是事件流的不同表现，这两者的产生是因为IE和Netscape两大公司完全不同的事件流概念产生的。（事件流: 是指页面接收事件的顺序）IE的事件流是事件冒泡，Netscaape的事件流是事件捕获流。</p><h2 id="事件处理程序"><a href="#事件处理程序" class="headerlink" title="事件处理程序"></a>事件处理程序</h2><ol><li>HTML事件处理程序</li><li>DOM 0级事件处理程序<ul><li>将一个函数赋值给一个事件处理程序属性  </li></ul></li><li>DOM 级事件处理程序<ul><li>可以为同一个元素同一个事件设定多个事件程序</li></ul></li></ol><p>DOM 0级事件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;button id&#x3D;&quot;btn&quot;&gt;button&lt;&#x2F;button&gt;</span><br><span class="line">var btn &#x3D; document.getElementById(&#39;btn&#39;);</span><br><span class="line">btn.onclick &#x3D; function()&#123;</span><br><span class="line">    console.log(&quot;supervision...&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>DOM 2级事件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;button id&#x3D;&quot;btn2&quot;&gt;button&lt;&#x2F;button&gt;</span><br><span class="line">var btn2 &#x3D; document.getElementById(&#39;btn2&#39;);</span><br><span class="line">btn2.addEventListener(&#39;事件名&#39;, &#39;函数名1&#39;);</span><br><span class="line">btn2.addEventListener(&#39;事件名&#39;, &#39;函数名2&#39;);</span><br><span class="line">btn2.removeEventListener(&#39;事件名&#39;, &#39;函数名2&#39;);</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>resnet + flask</title>
       <link href="/posts/51850/"/>
       <url>/posts/51850/</url>
